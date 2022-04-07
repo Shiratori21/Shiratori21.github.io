@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peach Music</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="stylesheet" href="./css/query..css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <button class="nav__mobile-menu">
+        <span class="menuicon-container menuicon-container-top">
+          <span class="menuicon-line menuicon-line-top"></span>
+        </span>
+        <span class="menuicon-container menuicon-container-bottom">
+          <span class="menuicon-line menuicon-line-bottom"></span>
+        </span>
+      </button>
+
+      <div class="nav__navigation">
+        <form action="" class="navigation-search">
+          <input
+            type="text"
+            class="navigation-search__input"
+            placeholder="検索"
+          />
+        </form>
+        <ul class="nav__navigation-list">
+          <li class="nav__navigation-list-item">
+            <a href="#" class="nav__navigation-list-btn">
+              <ion-icon
+                class="nav__navigation-list-icon"
+                name="play-circle-outline"
+              ></ion-icon>
+              <span class="nav__navigation-list-text">今すぐ聴く</span>
+            </a>
+          </li>
+          <li class="nav__navigation-list-item">
+            <a href="#" class="nav__navigation-list-btn">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__navigation-list-icon"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.92 11.354c.966 0 1.453-.487 1.453-1.49v-3.4c0-1.004-.487-1.483-1.453-1.483H6.452C5.487 4.981 5 5.46 5 6.464v3.4c0 1.003.487 1.49 1.452 1.49H9.92zm7.628 0c.965 0 1.452-.487 1.452-1.49v-3.4c0-1.004-.487-1.483-1.452-1.483h-3.46c-.974 0-1.46.479-1.46 1.483v3.4c0 1.003.486 1.49 1.46 1.49h3.46zm-7.65-1.073h-3.43c-.266 0-.396-.137-.396-.418v-3.4c0-.273.13-.41.396-.41h3.43c.265 0 .402.137.402.41v3.4c0 .281-.137.418-.403.418zm7.634 0h-3.43c-.273 0-.402-.137-.402-.418v-3.4c0-.273.129-.41.403-.41h3.43c.265 0 .395.137.395.41v3.4c0 .281-.13.418-.396.418zm-7.612 8.7c.966 0 1.453-.48 1.453-1.483v-3.407c0-.996-.487-1.483-1.453-1.483H6.452c-.965 0-1.452.487-1.452 1.483v3.407c0 1.004.487 1.483 1.452 1.483H9.92zm7.628 0c.965 0 1.452-.48 1.452-1.483v-3.407c0-.996-.487-1.483-1.452-1.483h-3.46c-.974 0-1.46.487-1.46 1.483v3.407c0 1.004.486 1.483 1.46 1.483h3.46zm-7.65-1.072h-3.43c-.266 0-.396-.137-.396-.41v-3.4c0-.282.13-.418.396-.418h3.43c.265 0 .402.136.402.418v3.4c0 .273-.137.41-.403.41zm7.634 0h-3.43c-.273 0-.402-.137-.402-.41v-3.4c0-.282.129-.418.403-.418h3.43c.265 0 .395.136.395.418v3.4c0 .273-.13.41-.396.41z"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+              <span class="nav__navigation-list-text">見つける</span>
+            </a>
+          </li>
+          <li class="nav__navigation-list-item">
+            <a href="#" class="nav__navigation-list-btn">
+              <ion-icon
+                class="nav__navigation-list-icon"
+                name="radio-outline"
+              ></ion-icon>
+              <span class="nav__navigation-list-text">ラジオ</span>
+            </a>
+          </li>
+          <li class="nav__navigation-list-item navigation-list-search">
+            <a href="#" class="nav__navigation-list-btn">
+              <ion-icon
+                class="nav__navigation-list-icon"
+                name="search-outline"
+              ></ion-icon>
+              <span class="nav__navigation-list-text">検索</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__navigation-native-go">
+          <button class="native-go__btn">
+            <ion-icon
+              class="native-go__logo"
+              name="musical-notes-outline"
+            ></ion-icon>
+            <span class="native-go__text">『ミュージック』で開く</span>
+            <ion-icon
+              class="native-go__to"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <a href="#" class="nav__logo">
+        <img
+          src="./images/peach.svg"
+          alt="Peach Company's Logo"
+          class="nav__logo__icon"
+        />
+        <span class="nav__logo__text">Music</span>
+      </a>
+
+      <button class="nav__btn--sign-in open--modal">サインイン</button>
+    </nav>
+
+    <div class="sign-up-page">
+      <div class="sign-up-page__text">
+        <p class="sign-up-page__heading">新しい音楽を毎日見つけよう。</p>
+        <p class="sign-up-page__subheading">
+          お聞きのアーティストやジャンルをもとに選ばれたプレイリストやアルバムを楽しむことができます。
+        </p>
+        <button class="global-btn btn--sign-up open--signup-modal">
+          今すぐ始めよう
+        </button>
+        <a
+          href="#https://www.apple.com/jp/apple-music/"
+          class="sign-up-page-link"
+          target="_blank"
+        >
+          <span class="sign-up-page-link__text">詳しい情報</span>
+          <img
+            src="./images/Icons/Rarrow.svg"
+            class="common-icon-rarr sign-up-page-link__icon"
+            alt="Right arrow"
+          />
+        </a>
+      </div>
+
+      <div class="sign-up-page__img-box">
+        <img
+          src="./images/small@2x.webp"
+          class="sign-up-page__img"
+          alt="Peach Music on MacBook Pro"
+        />
+      </div>
+    </div>
+
+    <main>
+      <div class="sign-up-modal">
+        <ion-icon
+          class="sign-up-modal__icon-close close--signup-modal"
+          name="close-outline"
+        ></ion-icon>
+
+        <div class="sign-up-modal__container">
+          <img
+            src="./images/peach-music.png"
+            alt="MUsic App icon"
+            class="app-icon-image"
+          />
+
+          <h1 class="heading-primary sign-up-modal-heading">
+            膨大な数の曲を1か月間無料でお楽しみいただけます。
+          </h1>
+          <p class="subheading description-first sign-up-modal-description">
+            さらに、ミュージックライブラリのすべての音楽を、お使いのあらゆるデバイスで楽しめます。新規のお客様のみ対象となります。
+          </p>
+          <p class="subheading description-second sign-up-modal-description">
+            1か月間無料、その後は月額<span class="jpy-yen-icon">&#165;</span
+            >980。
+          </p>
+          <div class="btn-container">
+            <button class="global-btn sign-up-btn btn--go-form">
+              新しいApple IDで登録
+            </button>
+            <button class="btn--sign-in open--modal">
+              <span class="btn--sign-in__text"
+                >すでにApple IDをお持ちですか? サインイン</span
+              >
+              <ion-icon
+                class="btn--sign-in__icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="./script/navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+$appPrimary: rgba(0, 0, 0, 0.88);
+$appPrimary-onDark: rgba(255, 255, 255, 0.88);
+$appSecondary: rgba(0, 0, 0, 0.56);
+$appTertiary: rgba(0, 0, 0, 0.23);
+$keyColor: #d60017;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: 1;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji, SF Pro,
+    Hiragino Sans, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3,
+    メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: $appPrimary;
+  background-color: $appPrimary-onDark;
+  overflow: hidden;
+}
+
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.global-btn {
+  display: inline-block;
+  border: none;
+  background-color: $keyColor;
+  color: #fff;
+  border-radius: 0.6rem;
+}
+
+.btn--close-menu {
+  position: absolute;
+  display: none;
+}
+
+.common-icon-rarr {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.jpy-yen-icon {
+  content: "\00A5";
+}
+
+// - Font sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// - Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+// */

@@ -1,0 +1,115 @@
+@media (min-width: 30em) {
+  html {
+    font-size: 63.5%;
+  }
+  .nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    row-gap: 3.2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    position: static;
+    z-index: 0;
+  }
+  .nav__mobile-menu {
+    display: none;
+  }
+  .nav__navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  .nav__navigation .navigation-search {
+    display: inline-block;
+    width: 100%;
+  }
+  .nav__navigation .navigation-search__input {
+    padding: 0.8rem 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 21rem;
+  }
+  .nav__navigation-list {
+    width: auto;
+  }
+  .nav__navigation .navigation-list-search {
+    display: none;
+  }
+  .nav__logo {
+    position: relative;
+    padding: 0.8rem;
+  }
+  .nav__logo__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .nav__logo__text {
+    font-size: 2.4rem;
+  }
+  .nav__btn--sign-in {
+    grid-column: 2 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    background-color: #d60017;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+  }
+  .sign-up-page {
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    width: 75%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 62.5em) {
+  html {
+    font-size: 67.5%;
+  }
+  .sign-up-page {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sign-up-page__heading {
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 44rem;
+    margin: 0 auto 1.6rem;
+  }
+  .sign-up-page__subheading {
+    font-size: 1.6rem;
+    max-width: 48rem;
+    margin: 0 auto 3.2rem;
+  }
+}
+
+@media (min-width: 77em) {
+  html {
+    font-size: 70%;
+  }
+  .sign-up-page__heading {
+    font-size: 5.2rem;
+    max-width: 44rem;
+    margin: 0 auto 1.6rem;
+  }
+}
+/*# sourceMappingURL=query..css.map */

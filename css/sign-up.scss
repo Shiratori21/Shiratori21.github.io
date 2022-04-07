@@ -1,0 +1,444 @@
+$appPrimary: rgba(0, 0, 0, 0.88);
+$appPrimary-onDark: rgba(255, 255, 255, 0.88);
+$appSecondary: rgba(0, 0, 0, 0.56);
+$appTertiary: rgba(0, 0, 0, 0.23);
+$keyColor: #d60017;
+$keyColorLighter: #d60015d3;
+
+// NAVIGATION HEADER ///////////////////////////////
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 2.2rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 2000;
+
+  &__mobile-menu {
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    cursor: pointer;
+
+    .menuicon-container {
+      display: block;
+      width: 2rem;
+      height: 0.2rem;
+      border-radius: 0.1rem;
+      transition: transform 0.31s ease-out;
+    }
+
+    &.rotate .menuicon-container-top {
+      transform: translateY(0.35rem);
+    }
+
+    &.rotate .menuicon-container-bottom {
+      transform: translateY(-0.35rem);
+    }
+
+    .menuicon-line {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      background: $keyColor;
+
+      transition: transform 0.19s ease-out 0.01s;
+    }
+
+    &.rotate .menuicon-line-top {
+      transform: rotate(45deg);
+    }
+
+    &.rotate .menuicon-line-bottom {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 4.8rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    padding: 1.2rem 3.6rem;
+    background-color: #fff;
+
+    transform: translateY(-1.2rem);
+    transition: 0.35s all ease-out 0.1s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    .navigation-search {
+      display: none;
+    }
+
+    &-list {
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+      gap: 1.8rem;
+
+      list-style: none;
+
+      &-btn:link,
+      &-btn:visited {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      &-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        color: $keyColor;
+        stroke: $keyColor;
+      }
+
+      &-text {
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+    }
+
+    &-native-go {
+      .native-go {
+        &__btn {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          border: none;
+          cursor: pointer;
+          color: $appSecondary;
+        }
+
+        &__logo {
+          flex-shrink: 0;
+          width: 2.2rem;
+          height: 2.2rem;
+          padding: 0.4rem;
+          border: 1px solid $appSecondary;
+          border-radius: 50%;
+
+          margin-right: 0.8rem;
+        }
+
+        &__text {
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          font-weight: 300;
+          overflow: hidden;
+        }
+
+        &__to {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+
+    text-decoration: none;
+    color: inherit;
+
+    &__icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 0.1rem;
+    }
+
+    &__text {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__btn--sign-in {
+    padding-top: 0.4rem;
+
+    font-size: 1.3rem;
+    font-weight: inherit;
+    font-family: inherit;
+    color: $keyColor;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// SIGN UP PAGE ///////////////////////////////////
+
+.sign-up-page {
+  display: flex;
+
+  // display: none;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 3.2rem 0.4rem;
+
+  transition: all 0.3s ease-in;
+
+  &__text {
+    width: 75%;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  &__subheading {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.03rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .btn--sign-up {
+    font-size: 1.14rem;
+    font-weight: 500;
+    padding: 1rem 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &__text {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    &__icon {
+      margin-left: -0.2rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+// NAVIGATION///////////////////////////
+.open-menu {
+  & .nav__navigation {
+    z-index: 1000;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+}
+
+// SIGN UP MODAL //////////////////////
+.sign-up-modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.open-modal .sign-up-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: #fff;
+  width: 100%;
+
+  height: 100vh;
+  padding: 1.6rem 2.4rem;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: all 0.4s;
+
+  &__icon-close {
+    width: 4rem;
+    height: 4rem;
+    color: $appTertiary;
+  }
+
+  &__container {
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 4.8rem;
+    text-align: center;
+
+    .app-icon-image {
+      width: 6.4rem;
+      height: 6.4rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &-heading {
+    padding: 0 0.8rem;
+    max-width: 85%;
+    margin: 0 auto 2.8rem;
+  }
+
+  &-description {
+    padding: 0 0.4rem;
+    letter-spacing: -0.1px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .description-second {
+    margin-bottom: 4.4rem;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+  }
+
+  .sign-up-btn {
+    width: 95%;
+    font-size: 1.6rem;
+    padding: 1.8rem 0;
+    border-radius: 11px;
+    background-color: $keyColorLighter;
+  }
+
+  .btn--sign-in {
+    font-size: 1.2rem;
+    color: $keyColor;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// form ////////////////////////////////////////////
+
+.form-container {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+  padding: 1.2rem;
+
+  display: none;
+
+  .btn--close-modal {
+    width: 3.6rem;
+    height: 3.6rem;
+    color: $appTertiary;
+  }
+
+  .signup-heading {
+    margin-top: 1.2rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .signup-form {
+    padding: 2.4rem 3.2rem;
+
+    &__input {
+      display: block;
+      width: 100%;
+      padding: 1.6rem 1.2rem;
+      border-radius: 6px;
+
+      color: $appTertiary;
+      border: 1px solid #d2d2d7;
+
+      font-size: 1.6rem;
+      text-align: left;
+    }
+
+    .form-names {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem;
+    }
+
+    .input-birthday {
+      margin-top: 3.2rem;
+    }
+
+    .input-email {
+      margin-top: 3.2rem;
+    }
+
+    .input-password {
+      margin-top: 4rem;
+    }
+  }
+  .btn-container {
+    text-align: right;
+    border-top: 1px solid #d2d2d7;
+    margin-top: 4.4rem;
+
+    .form-btn {
+      display: flex;
+      margin: 0.8rem 1.2rem 0 auto;
+      font-size: 1.6rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+}
+
+// - Font sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// - Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+// */
